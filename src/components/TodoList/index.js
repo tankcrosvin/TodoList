@@ -10,8 +10,8 @@ export default class TodoList extends Component {
 	static propTypes = {
 		todos: PropTypes.arrayOf(PropTypes.shape({
 			id: PropTypes.number.isRequired,
-			content: PropTypes.string.isRequired,
-			isCompleted: PropTypes.bool.isRequired
+			title: PropTypes.string.isRequired,
+			completed: PropTypes.bool.isRequired
 		})).isRequired,
 		onCheckBoxChanged: PropTypes.func,
 	}

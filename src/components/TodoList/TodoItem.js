@@ -13,16 +13,16 @@ export default class TodoItem extends React.PureComponent {
 	// 	}
 	render() {
 		// console.log(this.props, '12321312312312');
-		console.log(`${this.props.content} will be rendered!!!`);
+		// console.log(`${this.props.title} will be rendered!!!`);
 		return (
 			<li>
 				<input 
 					type="checkbox" 
-					checked ={this.props.isCompleted}
+					checked ={this.props.completed}
 					onChange = {this.handleCheckBoxChanged}
 				/>
-				{this.props.content}
-				<span>{this.props.isCompleted?'  Done':'  Undone'}</span>
+				{this.props.title}
+				<span>{this.props.completed?'  Done':'  Undone'}</span>
 				
 			</li>
 		)
